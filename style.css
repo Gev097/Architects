@@ -1,0 +1,245 @@
+*{
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    transition: .2s all linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* ..........header.............. */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4%;
+    letter-spacing: 3px;
+    word-spacing: 1rem;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.logo{
+    color: black;
+    
+}
+.logo span{
+    margin-right: .8rem;
+    font-weight: bolder;
+    color: black;
+}
+.logo:hover{
+    background-color: rgba(189, 182, 182, 0.623);
+    border-radius: .8rem;
+    padding: .5rem;
+}
+.navbar .text{
+    color: black;
+}
+.navbar .text:hover{
+    background-color: rgba(189, 182, 182, 0.623);
+    border-radius: .8rem;
+    padding: .5rem;
+}
+/* ...........br.......... */
+.br{
+    position: relative;
+}
+.brn img{
+    width: 100%;
+    height: auto;
+}
+.content .br{
+    margin-left: -7rem;
+    background: rgba(24, 23, 23, 0.836);
+    width: 95px;
+    height: 60px;
+    text-align: center;
+}
+.content span{
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+}
+/* .............Project............... */
+
+.project .inner{
+    margin: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.inner .heading h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.inner .heading{
+    border-bottom: 1px solid rgba(189, 182, 182, 0.623);
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+.project .inner .box{
+    margin-top: 1rem;
+    width: 24%;
+    height: 13rem;
+    position: relative;
+    overflow: hidden;
+}
+.project .inner .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project .inner .box .content {
+    position: absolute;
+    top: -110%;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(114, 113, 113, 0.185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project .inner .box .content h5{
+    font-size: 1.2rem;
+    color: white;
+    margin: .4rem 0;
+    border-radius: 1rem;
+    background-color: rgba(207, 141, 53, 0.664);
+    padding: .4rem;
+}
+.project .inner .box:hover .content{
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+/* .............About................. */
+
+.about .inner{
+    margin: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.about .inner .heading h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.about .inner .heading{
+    border-bottom: 1px solid rgba(189, 182, 182, 0.623);
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+.about .inner .text{
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.about .inner .box{
+    margin-top: 1rem;
+    width: 24%;
+    height: 13rem;
+    border-radius: .5rem;
+}
+.about .inner .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.about .inner .content h2{
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+.about .inner .content h4{
+    margin: 1rem 0;
+    font-weight: lighter;
+    color: rgb(128, 125, 125);
+}
+.about .inner .content p{
+    margin: 1rem 0;
+    font-weight: lighter;
+    color: black;
+    line-height: 1.4rem;
+    
+}
+.about .btn{
+    padding: .5rem 7rem;
+    background-color: rgba(189, 182, 182, 0.623);
+    color: black;
+    border-radius: .5rem;
+}
+.about .btn:hover{
+    background-color: rgb(54, 51, 51);
+    color: aliceblue;
+    transition: .5s;
+}
+/* ..........contact........... */
+
+.contact .inner{
+    margin: 17rem 2rem 3rem 2rem;
+  
+}
+.inner form{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.inner form input{ 
+    margin: 5px;
+    padding: .8rem;
+    width: 100%;
+    border: 2px solid rgba(189, 182, 182, 0.623);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.contact .inner .btn{
+    margin-left: .5rem ;
+    padding: .8rem 3rem;
+    border: 2px solid;
+    background: rgb(54, 51, 51);
+    color: white;
+    border-radius: .8rem;
+}
+.contact .inner .btn:hover{
+    background-color: rgba(189, 182, 182, 0.623);
+    color: black;
+    transition: .5s;
+}
+/* ..............map................ */
+
+.map img{
+    padding-top: -50px;
+    margin: 0 2rem;
+    width: 94.5%;
+    height: auto;
+}
+/* ...........Created............. */
+
+footer {
+    color: white;
+    background: black;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
